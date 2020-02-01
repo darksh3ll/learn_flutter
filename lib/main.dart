@@ -25,11 +25,38 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   @override
   Widget build(BuildContext context) {
+     Color _colorFromHex(String hexColor) {
+      final hexCode = hexColor.replaceAll('#', '');
+      return Color(int.parse('FF$hexCode', radix: 16));
+    }
+    Color color2 = _colorFromHex("#f78ae0");
     return Scaffold(
-      appBar: AppBar(),
-      body: Container(),
+      appBar: AppBar(
+        title: Text("METEO FLUTTER"),
+      ),
+      body: Center(
+        child:FlatButton(
+          onPressed: (){
+           print("hello");
+          },
+          child: Text('clikc me'),
+          color:color2
+        )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("coucou");
+        },
+        child: Text('valider'),
+        backgroundColor: Colors.red,
+        hoverColor: Colors.amberAccent,
+        tooltip: "Clik me",
+      ),
+      floatingActionButtonLocation:FloatingActionButtonLocation.centerDocked,
+
     );
   }
 }
