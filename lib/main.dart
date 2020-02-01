@@ -35,48 +35,15 @@ class _MyHomePageState extends State<MyHomePage> {
     Color color2 = _colorFromHex("#f78ae0");
     return Scaffold(
       appBar: AppBar(
-        title: Text("METEO FLUTTER"),
+        title: Text("Music"),
+        backgroundColor: Colors.grey[900],
       ),
-      body:Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          Container(
-            alignment: Alignment.center,
-            color: Colors.red,
-            height: 200.0,
-            child: Text("hello", style: TextStyle(fontSize: 35, color: Colors.white.withOpacity(0.6))),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: Colors.red,
-            height: 200.0,
-            child: Text("hello", style: TextStyle(fontSize: 35, color: Colors.white.withOpacity(0.6))),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: Colors.red,
-            height: 200.0,
-            child: Text("hello", style: TextStyle(fontSize: 35, color: Colors.white.withOpacity(0.6))),
-          ),
-          Container(
-            alignment: Alignment.center,
-            color: Colors.red,
-            height: 200.0,
-            child: Text("hello", style: TextStyle(fontSize: 35, color: Colors.white.withOpacity(0.6))),
-          ),
-        ],
-      ) ,
+      backgroundColor: Colors.grey[800],
 
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("coucou");
-        },
-        child: Text('valider'),
-        backgroundColor: Colors.red,
-        hoverColor: Colors.amberAccent,
-        tooltip: "Clik me",
+      body:Center(
+        child: Column(),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
     );
   }
 }
