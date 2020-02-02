@@ -5,10 +5,10 @@ class BlueBox extends StatelessWidget  {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400.0,
-      width: 400.0,
+      height: 200.0,
+      width: 200.0,
       alignment: Alignment.center,
-      child: Text("Box"),
+      child: Text("Flutter"),
       decoration: BoxDecoration(
         color: Colors.blue,
         border: Border.all(),
